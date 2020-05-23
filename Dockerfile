@@ -4,6 +4,7 @@ COPY arm-source.list /etc/apt/sources.list.d/arm-source.list
 
 RUN apt-get update && dpkg --add-architecture arm64 && apt-get install -y \
     build-essential \
+    autoconf \
     gcc-aarch64-linux-gnu \
     bison \
     flex \
